@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Amplify from 'aws-amplify';
 
-Amplify.configure(    
+Amplify.configure({    
   "aws_project_region": "eu-west-1",
   "aws_cognito_identity_pool_id": "eu-west-1:766f3384-fd7c-4472-95e0-3e4a9fe11c08",
   "aws_cognito_region": "eu-west-1",
@@ -18,7 +18,8 @@ Amplify.configure(
   "aws_appsync_apiKey": "da2-i3bdxgjwwrgpfkurebw25xgtvi",
   "aws_user_files_s3_bucket": "bucket103628-dev",
   "aws_user_files_s3_bucket_region": "eu-west-1"
-);
+  }
+  );
 
 ReactDOM.render(
   <React.StrictMode>
